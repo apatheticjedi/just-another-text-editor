@@ -18,7 +18,8 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Webpack Plugin'
+        title: 'Webpack Plugin',
+        favicon: './favicon.ico',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -64,9 +65,10 @@ module.exports = () => {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: [
-                ['@babel/preset-env', { targets: "defaults" }]
-              ]
+              presets:
+                ['@babel/preset-env'],
+              plugins:
+                ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             }
           }
         }
