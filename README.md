@@ -5,6 +5,8 @@
 
 # [Just Another Text Editor](https://github.com/apatheticjedi/just-another-text-editor)
 
+### [View the Deployed Application Here](https://arcane-caverns-39337.herokuapp.com/)
+
 ### Table of Contents
 
 1. [Description](#description)
